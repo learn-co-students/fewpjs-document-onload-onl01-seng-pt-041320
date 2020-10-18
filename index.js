@@ -1,9 +1,18 @@
 // Your code goes here
-let text = document.getElementById("text");
-
 document.addEventListener("DOMContentLoaded", function() {
-    text.textContent = "This is really cool!";
-    console.log("The DOM has loaded");
+    updateDOM()
 });
 
-console.log("This console.log() fires when index.js loads - before DOMContentLoaded is triggered");
+function updateDOM() {
+    document.getElementById("text").innerHTML = "This is really cool!";
+}
+
+// First Attempt
+// let text = document.getElementById("text");
+
+// document.addEventListener("DOMContentLoaded", function() {
+//     text.textContent = "This is really cool!";
+//     console.log("The DOM has loaded");
+// });
+
+// console.log("This console.log() fires when index.js loads - before DOMContentLoaded is triggered");
